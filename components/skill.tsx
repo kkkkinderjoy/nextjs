@@ -17,7 +17,7 @@ export default function Skill() {
     useEffect(()=>{
         const fetchData = async()=>{
             try{
-                const res = await fetch("/api/skill");
+                const res = await fetch("/api/portfolio?type=skill");
                 const data = await res.json()
                 console.log(data)
                 setItemList(data.data)

@@ -15,7 +15,7 @@ export default function About() {
     useEffect(()=>{
         const fetchData = async()=>{
             try{
-                const res = await fetch("/api/about");
+                const res = await fetch("/api/portfolio?type=about");
                 const data = await res.json()
                 console.log(data)
                 setItemList(data.data)

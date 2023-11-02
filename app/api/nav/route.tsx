@@ -2,10 +2,11 @@ import { NextResponse } from "next/server";
 import { faUser,faCode,faWindowMaximize } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+
 interface NavItem{
-    name:string,
-    link:string,
-    icon:IconDefinition
+    name:string;
+    link:string;
+    icon:IconDefinition;
 }
 
 interface NavData{
