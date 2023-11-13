@@ -8,8 +8,8 @@ interface AboutItem{
     desc2?:string;
     date?: string[];
     dateDesc?: string[];
-    
 }
+
 
 interface AboutData{
     data:AboutItem[];

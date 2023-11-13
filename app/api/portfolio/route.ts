@@ -8,7 +8,6 @@ interface AboutItem{
     desc2?:string;
     date?: string[];
     dateDesc?: string[];
-    
 }
 
 interface NavItem{

@@ -1,5 +1,6 @@
 // import styles from './page.module.css'
-import Skill2 from "@/components/skill"
+import Skill2 from "@/components/skill";
+
 export default function Skill(){ 
     
     return(

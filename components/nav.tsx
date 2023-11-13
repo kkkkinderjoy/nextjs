@@ -9,8 +9,8 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 
 interface NavItem{
-  name:string,
-  link:string,
+  name:string;
+  link:string;
   icon:IconDefinition
 }
 
@@ -25,7 +25,7 @@ export default function Nav() {
     useEffect(()=>{
       const fetchData = async() =>{
         try{
-          const res = await fetch("/api/portfolio?type=nav");
+          const res = await fetch("/api/portfolio/nav");
           const data = await res.json()
           // console.log(data)
           setMenuList(data.data)
@@ -55,7 +55,9 @@ export default function Nav() {
                   {
                     menuList.map((e,i)=>{
                       return(
+                        <>
                         <li key={i} className="relative hover:font-bold after:absolute after:w-full after:h-0.5 after:bg-black after:bottom-0 after:left-0 after:transition-all after:duration-500 after:scale-x-0 hover:after:scale-x-100"><Link href={e.link}>{e.name}</Link></li>
+                        </>
                       )
                     })
                   }
